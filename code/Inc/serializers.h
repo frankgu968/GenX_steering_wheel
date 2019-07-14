@@ -19,7 +19,7 @@
 #define MSG_LEN_ENC  13
 #define MSG_LEN_NAV  15
 
-void serializeNavPad(uint8_t * buf, bool spdt_l, bool spdt_r, bool k1, bool nav_u, bool nav_d, bool nav_l, bool nav_r, bool nav_enter, uint8_t nav_enc);
+void serializeNavPad(uint8_t * buf, uint8_t nav_btn, uint8_t nav_enc);
 void serializeEncoder(uint8_t * buf, uint8_t pos);
 void serializeRHTemp(uint8_t * buf, uint16_t temp, uint16_t rh);
 

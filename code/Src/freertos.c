@@ -27,6 +27,7 @@
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */     
 #include "serial.h"
+#include "serializers.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -139,9 +140,17 @@ void scanNavPad(void const * argument)
   /* USER CODE BEGIN scanNavPad */
   /* Infinite loop */
   uint32_t lastTickTime; 
+  char buf[MSG_LEN_NAV];
+  uint8_t navEnc, navBtn;
   lastTickTime = xTaskGetTickCount();
   for(;;)
   {
+    // TODO: Placeholders
+    navBtn = 0xCD;
+    navEnc = 0x26;
+
+    serializeNavPad(&buf, navBtn, navEnc);  // Assemble message
+    send_data(&buf, MSG_LEN_TEMP);    // Send message to UART
     osDelayUntil(&lastTickTime, navPadScanPeriod);
   }
   /* USER CODE END scanNavPad */
@@ -159,9 +168,16 @@ void getAccelerator(void const * argument)
   /* USER CODE BEGIN getAccelerator */
   /* Infinite loop */
   uint32_t lastTickTime; 
+  char buf[MSG_LEN_ENC];
+  uint8_t encPos;
   lastTickTime = xTaskGetTickCount();
   for(;;)
   {
+    // TODO: Placeholder
+    encPos = 0x17;
+
+    serializeEncoder(&buf, encPos);  // Assemble message
+    send_data(&buf, MSG_LEN_ENC);    // Send message to UART
     osDelayUntil(&lastTickTime, acceleratorScanPeriod);
   }
   /* USER CODE END getAccelerator */
@@ -179,10 +195,17 @@ void getRHTemp(void const * argument)
   /* USER CODE BEGIN getRHTemp */
   /* Infinite loop */
   uint32_t lastTickTime; 
+  char buf[MSG_LEN_TEMP];
+  uint16_t rh, temp; 
   lastTickTime = xTaskGetTickCount();
   for(;;)
   {
+    // TODO: placeholders
+    rh = 0x10;
+    temp = 0x15;
 
+    serializeRHTemp(&buf, temp, rh);  // Assemble message
+    send_data(&buf, MSG_LEN_TEMP);    // Send message to UART
     osDelayUntil(&lastTickTime, RHTempScanPeriod);
   }
   /* USER CODE END getRHTemp */
