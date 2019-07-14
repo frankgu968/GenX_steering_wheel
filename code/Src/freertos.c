@@ -48,14 +48,18 @@
 /* USER CODE BEGIN Variables */
 
 /* USER CODE END Variables */
-osThreadId defaultTaskHandle;
+osThreadId scanNavPadTaskHandle;
+osThreadId acceleratorTaskHandle;
+osThreadId getRHTempTaskHandle;
 
 /* Private function prototypes -----------------------------------------------*/
 /* USER CODE BEGIN FunctionPrototypes */
    
 /* USER CODE END FunctionPrototypes */
 
-void StartDefaultTask(void const * argument);
+void scanNavPad(void const * argument);
+void getAccelerator(void const * argument);
+void getRHTemp(void const * argument);
 
 void MX_FREERTOS_Init(void); /* (MISRA C 2004 rule 8.1) */
 
@@ -102,9 +106,17 @@ void MX_FREERTOS_Init(void) {
   /* USER CODE END RTOS_QUEUES */
 
   /* Create the thread(s) */
-  /* definition and creation of defaultTask */
-  osThreadDef(defaultTask, StartDefaultTask, osPriorityNormal, 0, 128);
-  defaultTaskHandle = osThreadCreate(osThread(defaultTask), NULL);
+  /* definition and creation of scanNavPadTask */
+  osThreadDef(scanNavPadTask, scanNavPad, osPriorityNormal, 0, 128);
+  scanNavPadTaskHandle = osThreadCreate(osThread(scanNavPadTask), NULL);
+
+  /* definition and creation of acceleratorTask */
+  osThreadDef(acceleratorTask, getAccelerator, osPriorityAboveNormal, 0, 128);
+  acceleratorTaskHandle = osThreadCreate(osThread(acceleratorTask), NULL);
+
+  /* definition and creation of getRHTempTask */
+  osThreadDef(getRHTempTask, getRHTemp, osPriorityBelowNormal, 0, 128);
+  getRHTempTaskHandle = osThreadCreate(osThread(getRHTempTask), NULL);
 
   /* USER CODE BEGIN RTOS_THREADS */
   /* add threads, ... */
@@ -112,23 +124,59 @@ void MX_FREERTOS_Init(void) {
 
 }
 
-/* USER CODE BEGIN Header_StartDefaultTask */
+/* USER CODE BEGIN Header_scanNavPad */
 /**
-  * @brief  Function implementing the defaultTask thread.
+  * @brief  Function implementing the scanNavPadTask thread.
   * @param  argument: Not used 
   * @retval None
   */
-/* USER CODE END Header_StartDefaultTask */
-void StartDefaultTask(void const * argument)
+/* USER CODE END Header_scanNavPad */
+void scanNavPad(void const * argument)
 {
 
-  /* USER CODE BEGIN StartDefaultTask */
+  /* USER CODE BEGIN scanNavPad */
   /* Infinite loop */
   for(;;)
   {
     osDelay(1);
   }
-  /* USER CODE END StartDefaultTask */
+  /* USER CODE END scanNavPad */
+}
+
+/* USER CODE BEGIN Header_getAccelerator */
+/**
+* @brief Function implementing the acceleratorTask thread.
+* @param argument: Not used
+* @retval None
+*/
+/* USER CODE END Header_getAccelerator */
+void getAccelerator(void const * argument)
+{
+  /* USER CODE BEGIN getAccelerator */
+  /* Infinite loop */
+  for(;;)
+  {
+    osDelay(1);
+  }
+  /* USER CODE END getAccelerator */
+}
+
+/* USER CODE BEGIN Header_getRHTemp */
+/**
+* @brief Function implementing the getRHTempTask thread.
+* @param argument: Not used
+* @retval None
+*/
+/* USER CODE END Header_getRHTemp */
+void getRHTemp(void const * argument)
+{
+  /* USER CODE BEGIN getRHTemp */
+  /* Infinite loop */
+  for(;;)
+  {
+    osDelay(1);
+  }
+  /* USER CODE END getRHTemp */
 }
 
 /* Private application code --------------------------------------------------*/

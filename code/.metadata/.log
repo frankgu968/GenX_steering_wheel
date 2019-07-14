@@ -8651,3 +8651,1318 @@ java.io.IOException: Bad file descriptor
 	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
 	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-14 17:28:10.477
+!MESSAGE IOException
+!STACK 0
+java.io.IOException: Bad file descriptor
+	at sun.nio.ch.FileDispatcherImpl.pwrite0(Native Method)
+	at sun.nio.ch.FileDispatcherImpl.pwrite(FileDispatcherImpl.java:66)
+	at sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:89)
+	at sun.nio.ch.IOUtil.write(IOUtil.java:65)
+	at sun.nio.ch.FileChannelImpl.writeInternal(FileChannelImpl.java:778)
+	at sun.nio.ch.FileChannelImpl.write(FileChannelImpl.java:764)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.write(Database.java:166)
+	at org.eclipse.cdt.internal.core.pdom.db.Chunk.flush(Chunk.java:52)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.flushAndUnlockChunks(Database.java:743)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.giveUpExclusiveLock(Database.java:700)
+	at org.eclipse.cdt.internal.core.pdom.PDOM.releaseWriteLock(PDOM.java:1080)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.releaseWriteLock(WritableCIndex.java:141)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.releaseWriteLock(WritableCIndex.java:126)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.setResume(AbstractIndexerTask.java:630)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:548)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-14 17:28:10.582
+!MESSAGE IOException
+!STACK 0
+java.io.IOException: Bad file descriptor
+	at sun.nio.ch.FileDispatcherImpl.pwrite0(Native Method)
+	at sun.nio.ch.FileDispatcherImpl.pwrite(FileDispatcherImpl.java:66)
+	at sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:89)
+	at sun.nio.ch.IOUtil.write(IOUtil.java:65)
+	at sun.nio.ch.FileChannelImpl.writeInternal(FileChannelImpl.java:778)
+	at sun.nio.ch.FileChannelImpl.write(FileChannelImpl.java:764)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.write(Database.java:166)
+	at org.eclipse.cdt.internal.core.pdom.db.Chunk.flush(Chunk.java:52)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.flushAndUnlockChunks(Database.java:743)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.giveUpExclusiveLock(Database.java:700)
+	at org.eclipse.cdt.internal.core.pdom.PDOM.releaseWriteLock(PDOM.java:1080)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.releaseWriteLock(WritableCIndex.java:141)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.releaseWriteLock(WritableCIndex.java:126)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.parseLinkage(AbstractIndexerTask.java:966)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:560)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-14 17:28:10.585
+!MESSAGE IOException
+!STACK 0
+java.io.IOException: Bad file descriptor
+	at sun.nio.ch.FileDispatcherImpl.pwrite0(Native Method)
+	at sun.nio.ch.FileDispatcherImpl.pwrite(FileDispatcherImpl.java:66)
+	at sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:89)
+	at sun.nio.ch.IOUtil.write(IOUtil.java:65)
+	at sun.nio.ch.FileChannelImpl.writeInternal(FileChannelImpl.java:778)
+	at sun.nio.ch.FileChannelImpl.write(FileChannelImpl.java:764)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.write(Database.java:166)
+	at org.eclipse.cdt.internal.core.pdom.db.Chunk.flush(Chunk.java:52)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.flushAndUnlockChunks(Database.java:743)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.giveUpExclusiveLock(Database.java:700)
+	at org.eclipse.cdt.internal.core.pdom.PDOM.releaseWriteLock(PDOM.java:1080)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.releaseWriteLock(WritableCIndex.java:141)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.releaseWriteLock(WritableCIndex.java:126)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.setResume(AbstractIndexerTask.java:630)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:609)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-14 17:28:10.586
+!MESSAGE IOException
+!STACK 0
+java.io.IOException: Bad file descriptor
+	at sun.nio.ch.FileDispatcherImpl.pwrite0(Native Method)
+	at sun.nio.ch.FileDispatcherImpl.pwrite(FileDispatcherImpl.java:66)
+	at sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:89)
+	at sun.nio.ch.IOUtil.write(IOUtil.java:65)
+	at sun.nio.ch.FileChannelImpl.writeInternal(FileChannelImpl.java:778)
+	at sun.nio.ch.FileChannelImpl.write(FileChannelImpl.java:764)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.write(Database.java:166)
+	at org.eclipse.cdt.internal.core.pdom.db.Chunk.flush(Chunk.java:52)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.flushAndUnlockChunks(Database.java:743)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.flush(Database.java:730)
+	at org.eclipse.cdt.internal.core.pdom.PDOM.flush(PDOM.java:1487)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.flush(WritablePDOM.java:191)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.flush(WritableCIndex.java:165)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:611)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-14 17:28:20.771
+!MESSAGE IOException
+!STACK 0
+java.io.IOException: Bad file descriptor
+	at sun.nio.ch.FileDispatcherImpl.pwrite0(Native Method)
+	at sun.nio.ch.FileDispatcherImpl.pwrite(FileDispatcherImpl.java:66)
+	at sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:89)
+	at sun.nio.ch.IOUtil.write(IOUtil.java:65)
+	at sun.nio.ch.FileChannelImpl.writeInternal(FileChannelImpl.java:778)
+	at sun.nio.ch.FileChannelImpl.write(FileChannelImpl.java:764)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.write(Database.java:166)
+	at org.eclipse.cdt.internal.core.pdom.db.Chunk.flush(Chunk.java:52)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.flushAndUnlockChunks(Database.java:743)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.giveUpExclusiveLock(Database.java:700)
+	at org.eclipse.cdt.internal.core.pdom.PDOM.releaseWriteLock(PDOM.java:1080)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.releaseWriteLock(WritableCIndex.java:141)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.releaseWriteLock(WritableCIndex.java:126)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.setResume(AbstractIndexerTask.java:630)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:548)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-14 17:28:20.772
+!MESSAGE IOException
+!STACK 0
+java.io.IOException: Bad file descriptor
+	at sun.nio.ch.FileDispatcherImpl.pwrite0(Native Method)
+	at sun.nio.ch.FileDispatcherImpl.pwrite(FileDispatcherImpl.java:66)
+	at sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:89)
+	at sun.nio.ch.IOUtil.write(IOUtil.java:65)
+	at sun.nio.ch.FileChannelImpl.writeInternal(FileChannelImpl.java:778)
+	at sun.nio.ch.FileChannelImpl.write(FileChannelImpl.java:764)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.write(Database.java:166)
+	at org.eclipse.cdt.internal.core.pdom.db.Chunk.flush(Chunk.java:52)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.flushAndUnlockChunks(Database.java:743)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.giveUpExclusiveLock(Database.java:700)
+	at org.eclipse.cdt.internal.core.pdom.PDOM.releaseWriteLock(PDOM.java:1080)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.releaseWriteLock(WritableCIndex.java:141)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.releaseWriteLock(WritableCIndex.java:126)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.setResume(AbstractIndexerTask.java:630)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:609)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-14 17:28:20.774
+!MESSAGE IOException
+!STACK 0
+java.io.IOException: Bad file descriptor
+	at sun.nio.ch.FileDispatcherImpl.pwrite0(Native Method)
+	at sun.nio.ch.FileDispatcherImpl.pwrite(FileDispatcherImpl.java:66)
+	at sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:89)
+	at sun.nio.ch.IOUtil.write(IOUtil.java:65)
+	at sun.nio.ch.FileChannelImpl.writeInternal(FileChannelImpl.java:778)
+	at sun.nio.ch.FileChannelImpl.write(FileChannelImpl.java:764)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.write(Database.java:166)
+	at org.eclipse.cdt.internal.core.pdom.db.Chunk.flush(Chunk.java:52)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.flushAndUnlockChunks(Database.java:743)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.flush(Database.java:730)
+	at org.eclipse.cdt.internal.core.pdom.PDOM.flush(PDOM.java:1487)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.flush(WritablePDOM.java:191)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.flush(WritableCIndex.java:165)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:611)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-14 17:28:22.324
+!MESSAGE IOException
+!STACK 0
+java.io.IOException: Bad file descriptor
+	at sun.nio.ch.FileDispatcherImpl.pwrite0(Native Method)
+	at sun.nio.ch.FileDispatcherImpl.pwrite(FileDispatcherImpl.java:66)
+	at sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:89)
+	at sun.nio.ch.IOUtil.write(IOUtil.java:65)
+	at sun.nio.ch.FileChannelImpl.writeInternal(FileChannelImpl.java:778)
+	at sun.nio.ch.FileChannelImpl.write(FileChannelImpl.java:764)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.write(Database.java:166)
+	at org.eclipse.cdt.internal.core.pdom.db.Chunk.flush(Chunk.java:52)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.flushAndUnlockChunks(Database.java:743)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.giveUpExclusiveLock(Database.java:700)
+	at org.eclipse.cdt.internal.core.pdom.PDOM.releaseWriteLock(PDOM.java:1080)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.releaseWriteLock(WritableCIndex.java:141)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.releaseWriteLock(WritableCIndex.java:126)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.setResume(AbstractIndexerTask.java:630)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:548)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-14 17:28:22.329
+!MESSAGE IOException
+!STACK 0
+java.io.IOException: Bad file descriptor
+	at sun.nio.ch.FileDispatcherImpl.pwrite0(Native Method)
+	at sun.nio.ch.FileDispatcherImpl.pwrite(FileDispatcherImpl.java:66)
+	at sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:89)
+	at sun.nio.ch.IOUtil.write(IOUtil.java:65)
+	at sun.nio.ch.FileChannelImpl.writeInternal(FileChannelImpl.java:778)
+	at sun.nio.ch.FileChannelImpl.write(FileChannelImpl.java:764)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.write(Database.java:166)
+	at org.eclipse.cdt.internal.core.pdom.db.Chunk.flush(Chunk.java:52)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.flushAndUnlockChunks(Database.java:743)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.giveUpExclusiveLock(Database.java:700)
+	at org.eclipse.cdt.internal.core.pdom.PDOM.releaseWriteLock(PDOM.java:1080)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.releaseWriteLock(WritableCIndex.java:141)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.releaseWriteLock(WritableCIndex.java:126)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.setResume(AbstractIndexerTask.java:630)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:609)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-14 17:28:22.331
+!MESSAGE IOException
+!STACK 0
+java.io.IOException: Bad file descriptor
+	at sun.nio.ch.FileDispatcherImpl.pwrite0(Native Method)
+	at sun.nio.ch.FileDispatcherImpl.pwrite(FileDispatcherImpl.java:66)
+	at sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:89)
+	at sun.nio.ch.IOUtil.write(IOUtil.java:65)
+	at sun.nio.ch.FileChannelImpl.writeInternal(FileChannelImpl.java:778)
+	at sun.nio.ch.FileChannelImpl.write(FileChannelImpl.java:764)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.write(Database.java:166)
+	at org.eclipse.cdt.internal.core.pdom.db.Chunk.flush(Chunk.java:52)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.flushAndUnlockChunks(Database.java:743)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.flush(Database.java:730)
+	at org.eclipse.cdt.internal.core.pdom.PDOM.flush(PDOM.java:1487)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.flush(WritablePDOM.java:191)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.flush(WritableCIndex.java:165)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:611)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-14 17:28:24.249
+!MESSAGE IOException
+!STACK 0
+java.io.IOException: Bad file descriptor
+	at sun.nio.ch.FileDispatcherImpl.pwrite0(Native Method)
+	at sun.nio.ch.FileDispatcherImpl.pwrite(FileDispatcherImpl.java:66)
+	at sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:89)
+	at sun.nio.ch.IOUtil.write(IOUtil.java:65)
+	at sun.nio.ch.FileChannelImpl.writeInternal(FileChannelImpl.java:778)
+	at sun.nio.ch.FileChannelImpl.write(FileChannelImpl.java:764)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.write(Database.java:166)
+	at org.eclipse.cdt.internal.core.pdom.db.Chunk.flush(Chunk.java:52)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.flushAndUnlockChunks(Database.java:743)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.giveUpExclusiveLock(Database.java:700)
+	at org.eclipse.cdt.internal.core.pdom.PDOM.releaseWriteLock(PDOM.java:1080)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.releaseWriteLock(WritableCIndex.java:141)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.releaseWriteLock(WritableCIndex.java:126)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.setResume(AbstractIndexerTask.java:630)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:548)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-14 17:28:24.251
+!MESSAGE IOException
+!STACK 0
+java.io.IOException: Bad file descriptor
+	at sun.nio.ch.FileDispatcherImpl.pwrite0(Native Method)
+	at sun.nio.ch.FileDispatcherImpl.pwrite(FileDispatcherImpl.java:66)
+	at sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:89)
+	at sun.nio.ch.IOUtil.write(IOUtil.java:65)
+	at sun.nio.ch.FileChannelImpl.writeInternal(FileChannelImpl.java:778)
+	at sun.nio.ch.FileChannelImpl.write(FileChannelImpl.java:764)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.write(Database.java:166)
+	at org.eclipse.cdt.internal.core.pdom.db.Chunk.flush(Chunk.java:52)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.flushAndUnlockChunks(Database.java:743)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.giveUpExclusiveLock(Database.java:700)
+	at org.eclipse.cdt.internal.core.pdom.PDOM.releaseWriteLock(PDOM.java:1080)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.releaseWriteLock(WritableCIndex.java:141)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.releaseWriteLock(WritableCIndex.java:126)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.setResume(AbstractIndexerTask.java:630)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:609)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-14 17:28:24.253
+!MESSAGE IOException
+!STACK 0
+java.io.IOException: Bad file descriptor
+	at sun.nio.ch.FileDispatcherImpl.pwrite0(Native Method)
+	at sun.nio.ch.FileDispatcherImpl.pwrite(FileDispatcherImpl.java:66)
+	at sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:89)
+	at sun.nio.ch.IOUtil.write(IOUtil.java:65)
+	at sun.nio.ch.FileChannelImpl.writeInternal(FileChannelImpl.java:778)
+	at sun.nio.ch.FileChannelImpl.write(FileChannelImpl.java:764)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.write(Database.java:166)
+	at org.eclipse.cdt.internal.core.pdom.db.Chunk.flush(Chunk.java:52)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.flushAndUnlockChunks(Database.java:743)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.flush(Database.java:730)
+	at org.eclipse.cdt.internal.core.pdom.PDOM.flush(PDOM.java:1487)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.flush(WritablePDOM.java:191)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.flush(WritableCIndex.java:165)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:611)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-14 17:28:25.819
+!MESSAGE IOException
+!STACK 0
+java.io.IOException: Bad file descriptor
+	at sun.nio.ch.FileDispatcherImpl.pwrite0(Native Method)
+	at sun.nio.ch.FileDispatcherImpl.pwrite(FileDispatcherImpl.java:66)
+	at sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:89)
+	at sun.nio.ch.IOUtil.write(IOUtil.java:65)
+	at sun.nio.ch.FileChannelImpl.writeInternal(FileChannelImpl.java:778)
+	at sun.nio.ch.FileChannelImpl.write(FileChannelImpl.java:764)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.write(Database.java:166)
+	at org.eclipse.cdt.internal.core.pdom.db.Chunk.flush(Chunk.java:52)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.flushAndUnlockChunks(Database.java:743)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.giveUpExclusiveLock(Database.java:700)
+	at org.eclipse.cdt.internal.core.pdom.PDOM.releaseWriteLock(PDOM.java:1080)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.releaseWriteLock(WritableCIndex.java:141)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.releaseWriteLock(WritableCIndex.java:126)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.setResume(AbstractIndexerTask.java:630)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:548)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-14 17:28:25.821
+!MESSAGE IOException
+!STACK 0
+java.io.IOException: Bad file descriptor
+	at sun.nio.ch.FileDispatcherImpl.pwrite0(Native Method)
+	at sun.nio.ch.FileDispatcherImpl.pwrite(FileDispatcherImpl.java:66)
+	at sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:89)
+	at sun.nio.ch.IOUtil.write(IOUtil.java:65)
+	at sun.nio.ch.FileChannelImpl.writeInternal(FileChannelImpl.java:778)
+	at sun.nio.ch.FileChannelImpl.write(FileChannelImpl.java:764)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.write(Database.java:166)
+	at org.eclipse.cdt.internal.core.pdom.db.Chunk.flush(Chunk.java:52)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.flushAndUnlockChunks(Database.java:743)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.giveUpExclusiveLock(Database.java:700)
+	at org.eclipse.cdt.internal.core.pdom.PDOM.releaseWriteLock(PDOM.java:1080)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.releaseWriteLock(WritableCIndex.java:141)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.releaseWriteLock(WritableCIndex.java:126)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.setResume(AbstractIndexerTask.java:630)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:609)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-14 17:28:25.823
+!MESSAGE IOException
+!STACK 0
+java.io.IOException: Bad file descriptor
+	at sun.nio.ch.FileDispatcherImpl.pwrite0(Native Method)
+	at sun.nio.ch.FileDispatcherImpl.pwrite(FileDispatcherImpl.java:66)
+	at sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:89)
+	at sun.nio.ch.IOUtil.write(IOUtil.java:65)
+	at sun.nio.ch.FileChannelImpl.writeInternal(FileChannelImpl.java:778)
+	at sun.nio.ch.FileChannelImpl.write(FileChannelImpl.java:764)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.write(Database.java:166)
+	at org.eclipse.cdt.internal.core.pdom.db.Chunk.flush(Chunk.java:52)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.flushAndUnlockChunks(Database.java:743)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.flush(Database.java:730)
+	at org.eclipse.cdt.internal.core.pdom.PDOM.flush(PDOM.java:1487)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.flush(WritablePDOM.java:191)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.flush(WritableCIndex.java:165)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:611)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-14 17:28:27.392
+!MESSAGE IOException
+!STACK 0
+java.io.IOException: Bad file descriptor
+	at sun.nio.ch.FileDispatcherImpl.pwrite0(Native Method)
+	at sun.nio.ch.FileDispatcherImpl.pwrite(FileDispatcherImpl.java:66)
+	at sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:89)
+	at sun.nio.ch.IOUtil.write(IOUtil.java:65)
+	at sun.nio.ch.FileChannelImpl.writeInternal(FileChannelImpl.java:778)
+	at sun.nio.ch.FileChannelImpl.write(FileChannelImpl.java:764)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.write(Database.java:166)
+	at org.eclipse.cdt.internal.core.pdom.db.Chunk.flush(Chunk.java:52)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.flushAndUnlockChunks(Database.java:743)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.giveUpExclusiveLock(Database.java:700)
+	at org.eclipse.cdt.internal.core.pdom.PDOM.releaseWriteLock(PDOM.java:1080)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.releaseWriteLock(WritableCIndex.java:141)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.releaseWriteLock(WritableCIndex.java:126)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.setResume(AbstractIndexerTask.java:630)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:548)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-14 17:28:27.393
+!MESSAGE IOException
+!STACK 0
+java.io.IOException: Bad file descriptor
+	at sun.nio.ch.FileDispatcherImpl.pwrite0(Native Method)
+	at sun.nio.ch.FileDispatcherImpl.pwrite(FileDispatcherImpl.java:66)
+	at sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:89)
+	at sun.nio.ch.IOUtil.write(IOUtil.java:65)
+	at sun.nio.ch.FileChannelImpl.writeInternal(FileChannelImpl.java:778)
+	at sun.nio.ch.FileChannelImpl.write(FileChannelImpl.java:764)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.write(Database.java:166)
+	at org.eclipse.cdt.internal.core.pdom.db.Chunk.flush(Chunk.java:52)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.flushAndUnlockChunks(Database.java:743)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.giveUpExclusiveLock(Database.java:700)
+	at org.eclipse.cdt.internal.core.pdom.PDOM.releaseWriteLock(PDOM.java:1080)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.releaseWriteLock(WritableCIndex.java:141)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.releaseWriteLock(WritableCIndex.java:126)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.setResume(AbstractIndexerTask.java:630)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:609)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-14 17:28:27.395
+!MESSAGE IOException
+!STACK 0
+java.io.IOException: Bad file descriptor
+	at sun.nio.ch.FileDispatcherImpl.pwrite0(Native Method)
+	at sun.nio.ch.FileDispatcherImpl.pwrite(FileDispatcherImpl.java:66)
+	at sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:89)
+	at sun.nio.ch.IOUtil.write(IOUtil.java:65)
+	at sun.nio.ch.FileChannelImpl.writeInternal(FileChannelImpl.java:778)
+	at sun.nio.ch.FileChannelImpl.write(FileChannelImpl.java:764)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.write(Database.java:166)
+	at org.eclipse.cdt.internal.core.pdom.db.Chunk.flush(Chunk.java:52)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.flushAndUnlockChunks(Database.java:743)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.flush(Database.java:730)
+	at org.eclipse.cdt.internal.core.pdom.PDOM.flush(PDOM.java:1487)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.flush(WritablePDOM.java:191)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.flush(WritableCIndex.java:165)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:611)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-14 17:28:28.920
+!MESSAGE IOException
+!STACK 0
+java.io.IOException: Bad file descriptor
+	at sun.nio.ch.FileDispatcherImpl.pwrite0(Native Method)
+	at sun.nio.ch.FileDispatcherImpl.pwrite(FileDispatcherImpl.java:66)
+	at sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:89)
+	at sun.nio.ch.IOUtil.write(IOUtil.java:65)
+	at sun.nio.ch.FileChannelImpl.writeInternal(FileChannelImpl.java:778)
+	at sun.nio.ch.FileChannelImpl.write(FileChannelImpl.java:764)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.write(Database.java:166)
+	at org.eclipse.cdt.internal.core.pdom.db.Chunk.flush(Chunk.java:52)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.flushAndUnlockChunks(Database.java:743)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.giveUpExclusiveLock(Database.java:700)
+	at org.eclipse.cdt.internal.core.pdom.PDOM.releaseWriteLock(PDOM.java:1080)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.releaseWriteLock(WritableCIndex.java:141)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.releaseWriteLock(WritableCIndex.java:126)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.setResume(AbstractIndexerTask.java:630)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:548)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-14 17:28:28.921
+!MESSAGE IOException
+!STACK 0
+java.io.IOException: Bad file descriptor
+	at sun.nio.ch.FileDispatcherImpl.pwrite0(Native Method)
+	at sun.nio.ch.FileDispatcherImpl.pwrite(FileDispatcherImpl.java:66)
+	at sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:89)
+	at sun.nio.ch.IOUtil.write(IOUtil.java:65)
+	at sun.nio.ch.FileChannelImpl.writeInternal(FileChannelImpl.java:778)
+	at sun.nio.ch.FileChannelImpl.write(FileChannelImpl.java:764)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.write(Database.java:166)
+	at org.eclipse.cdt.internal.core.pdom.db.Chunk.flush(Chunk.java:52)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.flushAndUnlockChunks(Database.java:743)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.giveUpExclusiveLock(Database.java:700)
+	at org.eclipse.cdt.internal.core.pdom.PDOM.releaseWriteLock(PDOM.java:1080)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.releaseWriteLock(WritableCIndex.java:141)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.releaseWriteLock(WritableCIndex.java:126)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.setResume(AbstractIndexerTask.java:630)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:609)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-14 17:28:28.923
+!MESSAGE IOException
+!STACK 0
+java.io.IOException: Bad file descriptor
+	at sun.nio.ch.FileDispatcherImpl.pwrite0(Native Method)
+	at sun.nio.ch.FileDispatcherImpl.pwrite(FileDispatcherImpl.java:66)
+	at sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:89)
+	at sun.nio.ch.IOUtil.write(IOUtil.java:65)
+	at sun.nio.ch.FileChannelImpl.writeInternal(FileChannelImpl.java:778)
+	at sun.nio.ch.FileChannelImpl.write(FileChannelImpl.java:764)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.write(Database.java:166)
+	at org.eclipse.cdt.internal.core.pdom.db.Chunk.flush(Chunk.java:52)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.flushAndUnlockChunks(Database.java:743)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.flush(Database.java:730)
+	at org.eclipse.cdt.internal.core.pdom.PDOM.flush(PDOM.java:1487)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.flush(WritablePDOM.java:191)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.flush(WritableCIndex.java:165)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:611)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-14 17:28:30.499
+!MESSAGE IOException
+!STACK 0
+java.io.IOException: Bad file descriptor
+	at sun.nio.ch.FileDispatcherImpl.pwrite0(Native Method)
+	at sun.nio.ch.FileDispatcherImpl.pwrite(FileDispatcherImpl.java:66)
+	at sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:89)
+	at sun.nio.ch.IOUtil.write(IOUtil.java:65)
+	at sun.nio.ch.FileChannelImpl.writeInternal(FileChannelImpl.java:778)
+	at sun.nio.ch.FileChannelImpl.write(FileChannelImpl.java:764)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.write(Database.java:166)
+	at org.eclipse.cdt.internal.core.pdom.db.Chunk.flush(Chunk.java:52)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.flushAndUnlockChunks(Database.java:743)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.giveUpExclusiveLock(Database.java:700)
+	at org.eclipse.cdt.internal.core.pdom.PDOM.releaseWriteLock(PDOM.java:1080)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.releaseWriteLock(WritableCIndex.java:141)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.releaseWriteLock(WritableCIndex.java:126)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.setResume(AbstractIndexerTask.java:630)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:548)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-14 17:28:30.500
+!MESSAGE IOException
+!STACK 0
+java.io.IOException: Bad file descriptor
+	at sun.nio.ch.FileDispatcherImpl.pwrite0(Native Method)
+	at sun.nio.ch.FileDispatcherImpl.pwrite(FileDispatcherImpl.java:66)
+	at sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:89)
+	at sun.nio.ch.IOUtil.write(IOUtil.java:65)
+	at sun.nio.ch.FileChannelImpl.writeInternal(FileChannelImpl.java:778)
+	at sun.nio.ch.FileChannelImpl.write(FileChannelImpl.java:764)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.write(Database.java:166)
+	at org.eclipse.cdt.internal.core.pdom.db.Chunk.flush(Chunk.java:52)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.flushAndUnlockChunks(Database.java:743)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.giveUpExclusiveLock(Database.java:700)
+	at org.eclipse.cdt.internal.core.pdom.PDOM.releaseWriteLock(PDOM.java:1080)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.releaseWriteLock(WritableCIndex.java:141)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.releaseWriteLock(WritableCIndex.java:126)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.setResume(AbstractIndexerTask.java:630)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:609)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-14 17:28:30.502
+!MESSAGE IOException
+!STACK 0
+java.io.IOException: Bad file descriptor
+	at sun.nio.ch.FileDispatcherImpl.pwrite0(Native Method)
+	at sun.nio.ch.FileDispatcherImpl.pwrite(FileDispatcherImpl.java:66)
+	at sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:89)
+	at sun.nio.ch.IOUtil.write(IOUtil.java:65)
+	at sun.nio.ch.FileChannelImpl.writeInternal(FileChannelImpl.java:778)
+	at sun.nio.ch.FileChannelImpl.write(FileChannelImpl.java:764)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.write(Database.java:166)
+	at org.eclipse.cdt.internal.core.pdom.db.Chunk.flush(Chunk.java:52)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.flushAndUnlockChunks(Database.java:743)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.flush(Database.java:730)
+	at org.eclipse.cdt.internal.core.pdom.PDOM.flush(PDOM.java:1487)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.flush(WritablePDOM.java:191)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.flush(WritableCIndex.java:165)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:611)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-14 17:28:32.080
+!MESSAGE IOException
+!STACK 0
+java.io.IOException: Bad file descriptor
+	at sun.nio.ch.FileDispatcherImpl.pwrite0(Native Method)
+	at sun.nio.ch.FileDispatcherImpl.pwrite(FileDispatcherImpl.java:66)
+	at sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:89)
+	at sun.nio.ch.IOUtil.write(IOUtil.java:65)
+	at sun.nio.ch.FileChannelImpl.writeInternal(FileChannelImpl.java:778)
+	at sun.nio.ch.FileChannelImpl.write(FileChannelImpl.java:764)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.write(Database.java:166)
+	at org.eclipse.cdt.internal.core.pdom.db.Chunk.flush(Chunk.java:52)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.flushAndUnlockChunks(Database.java:743)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.giveUpExclusiveLock(Database.java:700)
+	at org.eclipse.cdt.internal.core.pdom.PDOM.releaseWriteLock(PDOM.java:1080)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.releaseWriteLock(WritableCIndex.java:141)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.releaseWriteLock(WritableCIndex.java:126)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.setResume(AbstractIndexerTask.java:630)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:548)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-14 17:28:32.082
+!MESSAGE IOException
+!STACK 0
+java.io.IOException: Bad file descriptor
+	at sun.nio.ch.FileDispatcherImpl.pwrite0(Native Method)
+	at sun.nio.ch.FileDispatcherImpl.pwrite(FileDispatcherImpl.java:66)
+	at sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:89)
+	at sun.nio.ch.IOUtil.write(IOUtil.java:65)
+	at sun.nio.ch.FileChannelImpl.writeInternal(FileChannelImpl.java:778)
+	at sun.nio.ch.FileChannelImpl.write(FileChannelImpl.java:764)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.write(Database.java:166)
+	at org.eclipse.cdt.internal.core.pdom.db.Chunk.flush(Chunk.java:52)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.flushAndUnlockChunks(Database.java:743)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.giveUpExclusiveLock(Database.java:700)
+	at org.eclipse.cdt.internal.core.pdom.PDOM.releaseWriteLock(PDOM.java:1080)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.releaseWriteLock(WritableCIndex.java:141)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.releaseWriteLock(WritableCIndex.java:126)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.setResume(AbstractIndexerTask.java:630)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:609)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-14 17:28:32.083
+!MESSAGE IOException
+!STACK 0
+java.io.IOException: Bad file descriptor
+	at sun.nio.ch.FileDispatcherImpl.pwrite0(Native Method)
+	at sun.nio.ch.FileDispatcherImpl.pwrite(FileDispatcherImpl.java:66)
+	at sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:89)
+	at sun.nio.ch.IOUtil.write(IOUtil.java:65)
+	at sun.nio.ch.FileChannelImpl.writeInternal(FileChannelImpl.java:778)
+	at sun.nio.ch.FileChannelImpl.write(FileChannelImpl.java:764)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.write(Database.java:166)
+	at org.eclipse.cdt.internal.core.pdom.db.Chunk.flush(Chunk.java:52)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.flushAndUnlockChunks(Database.java:743)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.flush(Database.java:730)
+	at org.eclipse.cdt.internal.core.pdom.PDOM.flush(PDOM.java:1487)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.flush(WritablePDOM.java:191)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.flush(WritableCIndex.java:165)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:611)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-14 17:28:34.108
+!MESSAGE IOException
+!STACK 0
+java.io.IOException: Bad file descriptor
+	at sun.nio.ch.FileDispatcherImpl.pwrite0(Native Method)
+	at sun.nio.ch.FileDispatcherImpl.pwrite(FileDispatcherImpl.java:66)
+	at sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:89)
+	at sun.nio.ch.IOUtil.write(IOUtil.java:65)
+	at sun.nio.ch.FileChannelImpl.writeInternal(FileChannelImpl.java:778)
+	at sun.nio.ch.FileChannelImpl.write(FileChannelImpl.java:764)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.write(Database.java:166)
+	at org.eclipse.cdt.internal.core.pdom.db.Chunk.flush(Chunk.java:52)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.flushAndUnlockChunks(Database.java:743)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.giveUpExclusiveLock(Database.java:700)
+	at org.eclipse.cdt.internal.core.pdom.PDOM.releaseWriteLock(PDOM.java:1080)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.releaseWriteLock(WritableCIndex.java:141)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.releaseWriteLock(WritableCIndex.java:126)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.setResume(AbstractIndexerTask.java:630)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:548)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-14 17:28:34.110
+!MESSAGE IOException
+!STACK 0
+java.io.IOException: Bad file descriptor
+	at sun.nio.ch.FileDispatcherImpl.pwrite0(Native Method)
+	at sun.nio.ch.FileDispatcherImpl.pwrite(FileDispatcherImpl.java:66)
+	at sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:89)
+	at sun.nio.ch.IOUtil.write(IOUtil.java:65)
+	at sun.nio.ch.FileChannelImpl.writeInternal(FileChannelImpl.java:778)
+	at sun.nio.ch.FileChannelImpl.write(FileChannelImpl.java:764)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.write(Database.java:166)
+	at org.eclipse.cdt.internal.core.pdom.db.Chunk.flush(Chunk.java:52)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.flushAndUnlockChunks(Database.java:743)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.giveUpExclusiveLock(Database.java:700)
+	at org.eclipse.cdt.internal.core.pdom.PDOM.releaseWriteLock(PDOM.java:1080)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.releaseWriteLock(WritableCIndex.java:141)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.releaseWriteLock(WritableCIndex.java:126)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.setResume(AbstractIndexerTask.java:630)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:609)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-14 17:28:34.112
+!MESSAGE IOException
+!STACK 0
+java.io.IOException: Bad file descriptor
+	at sun.nio.ch.FileDispatcherImpl.pwrite0(Native Method)
+	at sun.nio.ch.FileDispatcherImpl.pwrite(FileDispatcherImpl.java:66)
+	at sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:89)
+	at sun.nio.ch.IOUtil.write(IOUtil.java:65)
+	at sun.nio.ch.FileChannelImpl.writeInternal(FileChannelImpl.java:778)
+	at sun.nio.ch.FileChannelImpl.write(FileChannelImpl.java:764)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.write(Database.java:166)
+	at org.eclipse.cdt.internal.core.pdom.db.Chunk.flush(Chunk.java:52)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.flushAndUnlockChunks(Database.java:743)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.flush(Database.java:730)
+	at org.eclipse.cdt.internal.core.pdom.PDOM.flush(PDOM.java:1487)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.flush(WritablePDOM.java:191)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.flush(WritableCIndex.java:165)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:611)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-14 17:28:35.679
+!MESSAGE IOException
+!STACK 0
+java.io.IOException: Bad file descriptor
+	at sun.nio.ch.FileDispatcherImpl.pwrite0(Native Method)
+	at sun.nio.ch.FileDispatcherImpl.pwrite(FileDispatcherImpl.java:66)
+	at sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:89)
+	at sun.nio.ch.IOUtil.write(IOUtil.java:65)
+	at sun.nio.ch.FileChannelImpl.writeInternal(FileChannelImpl.java:778)
+	at sun.nio.ch.FileChannelImpl.write(FileChannelImpl.java:764)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.write(Database.java:166)
+	at org.eclipse.cdt.internal.core.pdom.db.Chunk.flush(Chunk.java:52)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.flushAndUnlockChunks(Database.java:743)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.giveUpExclusiveLock(Database.java:700)
+	at org.eclipse.cdt.internal.core.pdom.PDOM.releaseWriteLock(PDOM.java:1080)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.releaseWriteLock(WritableCIndex.java:141)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.releaseWriteLock(WritableCIndex.java:126)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.setResume(AbstractIndexerTask.java:630)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:548)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-14 17:28:35.681
+!MESSAGE IOException
+!STACK 0
+java.io.IOException: Bad file descriptor
+	at sun.nio.ch.FileDispatcherImpl.pwrite0(Native Method)
+	at sun.nio.ch.FileDispatcherImpl.pwrite(FileDispatcherImpl.java:66)
+	at sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:89)
+	at sun.nio.ch.IOUtil.write(IOUtil.java:65)
+	at sun.nio.ch.FileChannelImpl.writeInternal(FileChannelImpl.java:778)
+	at sun.nio.ch.FileChannelImpl.write(FileChannelImpl.java:764)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.write(Database.java:166)
+	at org.eclipse.cdt.internal.core.pdom.db.Chunk.flush(Chunk.java:52)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.flushAndUnlockChunks(Database.java:743)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.giveUpExclusiveLock(Database.java:700)
+	at org.eclipse.cdt.internal.core.pdom.PDOM.releaseWriteLock(PDOM.java:1080)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.releaseWriteLock(WritableCIndex.java:141)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.releaseWriteLock(WritableCIndex.java:126)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.setResume(AbstractIndexerTask.java:630)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:609)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-14 17:28:35.682
+!MESSAGE IOException
+!STACK 0
+java.io.IOException: Bad file descriptor
+	at sun.nio.ch.FileDispatcherImpl.pwrite0(Native Method)
+	at sun.nio.ch.FileDispatcherImpl.pwrite(FileDispatcherImpl.java:66)
+	at sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:89)
+	at sun.nio.ch.IOUtil.write(IOUtil.java:65)
+	at sun.nio.ch.FileChannelImpl.writeInternal(FileChannelImpl.java:778)
+	at sun.nio.ch.FileChannelImpl.write(FileChannelImpl.java:764)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.write(Database.java:166)
+	at org.eclipse.cdt.internal.core.pdom.db.Chunk.flush(Chunk.java:52)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.flushAndUnlockChunks(Database.java:743)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.flush(Database.java:730)
+	at org.eclipse.cdt.internal.core.pdom.PDOM.flush(PDOM.java:1487)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.flush(WritablePDOM.java:191)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.flush(WritableCIndex.java:165)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:611)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-14 17:28:37.200
+!MESSAGE IOException
+!STACK 0
+java.io.IOException: Bad file descriptor
+	at sun.nio.ch.FileDispatcherImpl.pwrite0(Native Method)
+	at sun.nio.ch.FileDispatcherImpl.pwrite(FileDispatcherImpl.java:66)
+	at sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:89)
+	at sun.nio.ch.IOUtil.write(IOUtil.java:65)
+	at sun.nio.ch.FileChannelImpl.writeInternal(FileChannelImpl.java:778)
+	at sun.nio.ch.FileChannelImpl.write(FileChannelImpl.java:764)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.write(Database.java:166)
+	at org.eclipse.cdt.internal.core.pdom.db.Chunk.flush(Chunk.java:52)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.flushAndUnlockChunks(Database.java:743)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.giveUpExclusiveLock(Database.java:700)
+	at org.eclipse.cdt.internal.core.pdom.PDOM.releaseWriteLock(PDOM.java:1080)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.releaseWriteLock(WritableCIndex.java:141)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.releaseWriteLock(WritableCIndex.java:126)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.setResume(AbstractIndexerTask.java:630)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:548)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-14 17:28:37.201
+!MESSAGE IOException
+!STACK 0
+java.io.IOException: Bad file descriptor
+	at sun.nio.ch.FileDispatcherImpl.pwrite0(Native Method)
+	at sun.nio.ch.FileDispatcherImpl.pwrite(FileDispatcherImpl.java:66)
+	at sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:89)
+	at sun.nio.ch.IOUtil.write(IOUtil.java:65)
+	at sun.nio.ch.FileChannelImpl.writeInternal(FileChannelImpl.java:778)
+	at sun.nio.ch.FileChannelImpl.write(FileChannelImpl.java:764)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.write(Database.java:166)
+	at org.eclipse.cdt.internal.core.pdom.db.Chunk.flush(Chunk.java:52)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.flushAndUnlockChunks(Database.java:743)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.giveUpExclusiveLock(Database.java:700)
+	at org.eclipse.cdt.internal.core.pdom.PDOM.releaseWriteLock(PDOM.java:1080)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.releaseWriteLock(WritableCIndex.java:141)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.releaseWriteLock(WritableCIndex.java:126)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.setResume(AbstractIndexerTask.java:630)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:609)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-14 17:28:37.204
+!MESSAGE IOException
+!STACK 0
+java.io.IOException: Bad file descriptor
+	at sun.nio.ch.FileDispatcherImpl.pwrite0(Native Method)
+	at sun.nio.ch.FileDispatcherImpl.pwrite(FileDispatcherImpl.java:66)
+	at sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:89)
+	at sun.nio.ch.IOUtil.write(IOUtil.java:65)
+	at sun.nio.ch.FileChannelImpl.writeInternal(FileChannelImpl.java:778)
+	at sun.nio.ch.FileChannelImpl.write(FileChannelImpl.java:764)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.write(Database.java:166)
+	at org.eclipse.cdt.internal.core.pdom.db.Chunk.flush(Chunk.java:52)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.flushAndUnlockChunks(Database.java:743)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.flush(Database.java:730)
+	at org.eclipse.cdt.internal.core.pdom.PDOM.flush(PDOM.java:1487)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.flush(WritablePDOM.java:191)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.flush(WritableCIndex.java:165)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:611)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-14 17:28:38.772
+!MESSAGE IOException
+!STACK 0
+java.io.IOException: Bad file descriptor
+	at sun.nio.ch.FileDispatcherImpl.pwrite0(Native Method)
+	at sun.nio.ch.FileDispatcherImpl.pwrite(FileDispatcherImpl.java:66)
+	at sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:89)
+	at sun.nio.ch.IOUtil.write(IOUtil.java:65)
+	at sun.nio.ch.FileChannelImpl.writeInternal(FileChannelImpl.java:778)
+	at sun.nio.ch.FileChannelImpl.write(FileChannelImpl.java:764)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.write(Database.java:166)
+	at org.eclipse.cdt.internal.core.pdom.db.Chunk.flush(Chunk.java:52)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.flushAndUnlockChunks(Database.java:743)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.giveUpExclusiveLock(Database.java:700)
+	at org.eclipse.cdt.internal.core.pdom.PDOM.releaseWriteLock(PDOM.java:1080)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.releaseWriteLock(WritableCIndex.java:141)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.releaseWriteLock(WritableCIndex.java:126)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.setResume(AbstractIndexerTask.java:630)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:548)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-14 17:28:38.774
+!MESSAGE IOException
+!STACK 0
+java.io.IOException: Bad file descriptor
+	at sun.nio.ch.FileDispatcherImpl.pwrite0(Native Method)
+	at sun.nio.ch.FileDispatcherImpl.pwrite(FileDispatcherImpl.java:66)
+	at sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:89)
+	at sun.nio.ch.IOUtil.write(IOUtil.java:65)
+	at sun.nio.ch.FileChannelImpl.writeInternal(FileChannelImpl.java:778)
+	at sun.nio.ch.FileChannelImpl.write(FileChannelImpl.java:764)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.write(Database.java:166)
+	at org.eclipse.cdt.internal.core.pdom.db.Chunk.flush(Chunk.java:52)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.flushAndUnlockChunks(Database.java:743)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.giveUpExclusiveLock(Database.java:700)
+	at org.eclipse.cdt.internal.core.pdom.PDOM.releaseWriteLock(PDOM.java:1080)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.releaseWriteLock(WritableCIndex.java:141)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.releaseWriteLock(WritableCIndex.java:126)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.setResume(AbstractIndexerTask.java:630)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:609)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-14 17:28:38.775
+!MESSAGE IOException
+!STACK 0
+java.io.IOException: Bad file descriptor
+	at sun.nio.ch.FileDispatcherImpl.pwrite0(Native Method)
+	at sun.nio.ch.FileDispatcherImpl.pwrite(FileDispatcherImpl.java:66)
+	at sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:89)
+	at sun.nio.ch.IOUtil.write(IOUtil.java:65)
+	at sun.nio.ch.FileChannelImpl.writeInternal(FileChannelImpl.java:778)
+	at sun.nio.ch.FileChannelImpl.write(FileChannelImpl.java:764)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.write(Database.java:166)
+	at org.eclipse.cdt.internal.core.pdom.db.Chunk.flush(Chunk.java:52)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.flushAndUnlockChunks(Database.java:743)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.flush(Database.java:730)
+	at org.eclipse.cdt.internal.core.pdom.PDOM.flush(PDOM.java:1487)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.flush(WritablePDOM.java:191)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.flush(WritableCIndex.java:165)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:611)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-14 17:28:40.495
+!MESSAGE IOException
+!STACK 0
+java.io.IOException: Bad file descriptor
+	at sun.nio.ch.FileDispatcherImpl.pwrite0(Native Method)
+	at sun.nio.ch.FileDispatcherImpl.pwrite(FileDispatcherImpl.java:66)
+	at sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:89)
+	at sun.nio.ch.IOUtil.write(IOUtil.java:65)
+	at sun.nio.ch.FileChannelImpl.writeInternal(FileChannelImpl.java:778)
+	at sun.nio.ch.FileChannelImpl.write(FileChannelImpl.java:764)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.write(Database.java:166)
+	at org.eclipse.cdt.internal.core.pdom.db.Chunk.flush(Chunk.java:52)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.flushAndUnlockChunks(Database.java:743)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.giveUpExclusiveLock(Database.java:700)
+	at org.eclipse.cdt.internal.core.pdom.PDOM.releaseWriteLock(PDOM.java:1080)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.releaseWriteLock(WritableCIndex.java:141)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.releaseWriteLock(WritableCIndex.java:126)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.setResume(AbstractIndexerTask.java:630)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:548)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-14 17:28:40.497
+!MESSAGE IOException
+!STACK 0
+java.io.IOException: Bad file descriptor
+	at sun.nio.ch.FileDispatcherImpl.pwrite0(Native Method)
+	at sun.nio.ch.FileDispatcherImpl.pwrite(FileDispatcherImpl.java:66)
+	at sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:89)
+	at sun.nio.ch.IOUtil.write(IOUtil.java:65)
+	at sun.nio.ch.FileChannelImpl.writeInternal(FileChannelImpl.java:778)
+	at sun.nio.ch.FileChannelImpl.write(FileChannelImpl.java:764)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.write(Database.java:166)
+	at org.eclipse.cdt.internal.core.pdom.db.Chunk.flush(Chunk.java:52)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.flushAndUnlockChunks(Database.java:743)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.giveUpExclusiveLock(Database.java:700)
+	at org.eclipse.cdt.internal.core.pdom.PDOM.releaseWriteLock(PDOM.java:1080)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.releaseWriteLock(WritableCIndex.java:141)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.releaseWriteLock(WritableCIndex.java:126)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.setResume(AbstractIndexerTask.java:630)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:609)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-14 17:28:40.499
+!MESSAGE IOException
+!STACK 0
+java.io.IOException: Bad file descriptor
+	at sun.nio.ch.FileDispatcherImpl.pwrite0(Native Method)
+	at sun.nio.ch.FileDispatcherImpl.pwrite(FileDispatcherImpl.java:66)
+	at sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:89)
+	at sun.nio.ch.IOUtil.write(IOUtil.java:65)
+	at sun.nio.ch.FileChannelImpl.writeInternal(FileChannelImpl.java:778)
+	at sun.nio.ch.FileChannelImpl.write(FileChannelImpl.java:764)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.write(Database.java:166)
+	at org.eclipse.cdt.internal.core.pdom.db.Chunk.flush(Chunk.java:52)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.flushAndUnlockChunks(Database.java:743)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.flush(Database.java:730)
+	at org.eclipse.cdt.internal.core.pdom.PDOM.flush(PDOM.java:1487)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.flush(WritablePDOM.java:191)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.flush(WritableCIndex.java:165)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:611)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-14 17:28:42.032
+!MESSAGE IOException
+!STACK 0
+java.io.IOException: Bad file descriptor
+	at sun.nio.ch.FileDispatcherImpl.pwrite0(Native Method)
+	at sun.nio.ch.FileDispatcherImpl.pwrite(FileDispatcherImpl.java:66)
+	at sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:89)
+	at sun.nio.ch.IOUtil.write(IOUtil.java:65)
+	at sun.nio.ch.FileChannelImpl.writeInternal(FileChannelImpl.java:778)
+	at sun.nio.ch.FileChannelImpl.write(FileChannelImpl.java:764)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.write(Database.java:166)
+	at org.eclipse.cdt.internal.core.pdom.db.Chunk.flush(Chunk.java:52)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.flushAndUnlockChunks(Database.java:743)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.giveUpExclusiveLock(Database.java:700)
+	at org.eclipse.cdt.internal.core.pdom.PDOM.releaseWriteLock(PDOM.java:1080)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.releaseWriteLock(WritableCIndex.java:141)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.releaseWriteLock(WritableCIndex.java:126)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.setResume(AbstractIndexerTask.java:630)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:548)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-14 17:28:42.034
+!MESSAGE IOException
+!STACK 0
+java.io.IOException: Bad file descriptor
+	at sun.nio.ch.FileDispatcherImpl.pwrite0(Native Method)
+	at sun.nio.ch.FileDispatcherImpl.pwrite(FileDispatcherImpl.java:66)
+	at sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:89)
+	at sun.nio.ch.IOUtil.write(IOUtil.java:65)
+	at sun.nio.ch.FileChannelImpl.writeInternal(FileChannelImpl.java:778)
+	at sun.nio.ch.FileChannelImpl.write(FileChannelImpl.java:764)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.write(Database.java:166)
+	at org.eclipse.cdt.internal.core.pdom.db.Chunk.flush(Chunk.java:52)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.flushAndUnlockChunks(Database.java:743)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.giveUpExclusiveLock(Database.java:700)
+	at org.eclipse.cdt.internal.core.pdom.PDOM.releaseWriteLock(PDOM.java:1080)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.releaseWriteLock(WritableCIndex.java:141)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.releaseWriteLock(WritableCIndex.java:126)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.setResume(AbstractIndexerTask.java:630)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:609)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-14 17:28:42.036
+!MESSAGE IOException
+!STACK 0
+java.io.IOException: Bad file descriptor
+	at sun.nio.ch.FileDispatcherImpl.pwrite0(Native Method)
+	at sun.nio.ch.FileDispatcherImpl.pwrite(FileDispatcherImpl.java:66)
+	at sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:89)
+	at sun.nio.ch.IOUtil.write(IOUtil.java:65)
+	at sun.nio.ch.FileChannelImpl.writeInternal(FileChannelImpl.java:778)
+	at sun.nio.ch.FileChannelImpl.write(FileChannelImpl.java:764)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.write(Database.java:166)
+	at org.eclipse.cdt.internal.core.pdom.db.Chunk.flush(Chunk.java:52)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.flushAndUnlockChunks(Database.java:743)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.flush(Database.java:730)
+	at org.eclipse.cdt.internal.core.pdom.PDOM.flush(PDOM.java:1487)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.flush(WritablePDOM.java:191)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.flush(WritableCIndex.java:165)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:611)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-14 17:28:43.602
+!MESSAGE IOException
+!STACK 0
+java.io.IOException: Bad file descriptor
+	at sun.nio.ch.FileDispatcherImpl.pwrite0(Native Method)
+	at sun.nio.ch.FileDispatcherImpl.pwrite(FileDispatcherImpl.java:66)
+	at sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:89)
+	at sun.nio.ch.IOUtil.write(IOUtil.java:65)
+	at sun.nio.ch.FileChannelImpl.writeInternal(FileChannelImpl.java:778)
+	at sun.nio.ch.FileChannelImpl.write(FileChannelImpl.java:764)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.write(Database.java:166)
+	at org.eclipse.cdt.internal.core.pdom.db.Chunk.flush(Chunk.java:52)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.flushAndUnlockChunks(Database.java:743)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.giveUpExclusiveLock(Database.java:700)
+	at org.eclipse.cdt.internal.core.pdom.PDOM.releaseWriteLock(PDOM.java:1080)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.releaseWriteLock(WritableCIndex.java:141)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.releaseWriteLock(WritableCIndex.java:126)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.setResume(AbstractIndexerTask.java:630)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:548)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-14 17:28:43.603
+!MESSAGE IOException
+!STACK 0
+java.io.IOException: Bad file descriptor
+	at sun.nio.ch.FileDispatcherImpl.pwrite0(Native Method)
+	at sun.nio.ch.FileDispatcherImpl.pwrite(FileDispatcherImpl.java:66)
+	at sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:89)
+	at sun.nio.ch.IOUtil.write(IOUtil.java:65)
+	at sun.nio.ch.FileChannelImpl.writeInternal(FileChannelImpl.java:778)
+	at sun.nio.ch.FileChannelImpl.write(FileChannelImpl.java:764)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.write(Database.java:166)
+	at org.eclipse.cdt.internal.core.pdom.db.Chunk.flush(Chunk.java:52)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.flushAndUnlockChunks(Database.java:743)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.giveUpExclusiveLock(Database.java:700)
+	at org.eclipse.cdt.internal.core.pdom.PDOM.releaseWriteLock(PDOM.java:1080)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.releaseWriteLock(WritableCIndex.java:141)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.releaseWriteLock(WritableCIndex.java:126)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.setResume(AbstractIndexerTask.java:630)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:609)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-14 17:28:43.605
+!MESSAGE IOException
+!STACK 0
+java.io.IOException: Bad file descriptor
+	at sun.nio.ch.FileDispatcherImpl.pwrite0(Native Method)
+	at sun.nio.ch.FileDispatcherImpl.pwrite(FileDispatcherImpl.java:66)
+	at sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:89)
+	at sun.nio.ch.IOUtil.write(IOUtil.java:65)
+	at sun.nio.ch.FileChannelImpl.writeInternal(FileChannelImpl.java:778)
+	at sun.nio.ch.FileChannelImpl.write(FileChannelImpl.java:764)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.write(Database.java:166)
+	at org.eclipse.cdt.internal.core.pdom.db.Chunk.flush(Chunk.java:52)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.flushAndUnlockChunks(Database.java:743)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.flush(Database.java:730)
+	at org.eclipse.cdt.internal.core.pdom.PDOM.flush(PDOM.java:1487)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.flush(WritablePDOM.java:191)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.flush(WritableCIndex.java:165)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:611)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-14 17:28:45.187
+!MESSAGE IOException
+!STACK 0
+java.io.IOException: Bad file descriptor
+	at sun.nio.ch.FileDispatcherImpl.pwrite0(Native Method)
+	at sun.nio.ch.FileDispatcherImpl.pwrite(FileDispatcherImpl.java:66)
+	at sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:89)
+	at sun.nio.ch.IOUtil.write(IOUtil.java:65)
+	at sun.nio.ch.FileChannelImpl.writeInternal(FileChannelImpl.java:778)
+	at sun.nio.ch.FileChannelImpl.write(FileChannelImpl.java:764)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.write(Database.java:166)
+	at org.eclipse.cdt.internal.core.pdom.db.Chunk.flush(Chunk.java:52)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.flushAndUnlockChunks(Database.java:743)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.giveUpExclusiveLock(Database.java:700)
+	at org.eclipse.cdt.internal.core.pdom.PDOM.releaseWriteLock(PDOM.java:1080)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.releaseWriteLock(WritableCIndex.java:141)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.releaseWriteLock(WritableCIndex.java:126)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.setResume(AbstractIndexerTask.java:630)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:548)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-14 17:28:45.189
+!MESSAGE IOException
+!STACK 0
+java.io.IOException: Bad file descriptor
+	at sun.nio.ch.FileDispatcherImpl.pwrite0(Native Method)
+	at sun.nio.ch.FileDispatcherImpl.pwrite(FileDispatcherImpl.java:66)
+	at sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:89)
+	at sun.nio.ch.IOUtil.write(IOUtil.java:65)
+	at sun.nio.ch.FileChannelImpl.writeInternal(FileChannelImpl.java:778)
+	at sun.nio.ch.FileChannelImpl.write(FileChannelImpl.java:764)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.write(Database.java:166)
+	at org.eclipse.cdt.internal.core.pdom.db.Chunk.flush(Chunk.java:52)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.flushAndUnlockChunks(Database.java:743)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.giveUpExclusiveLock(Database.java:700)
+	at org.eclipse.cdt.internal.core.pdom.PDOM.releaseWriteLock(PDOM.java:1080)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.releaseWriteLock(WritableCIndex.java:141)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.releaseWriteLock(WritableCIndex.java:126)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.setResume(AbstractIndexerTask.java:630)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:609)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-14 17:28:45.191
+!MESSAGE IOException
+!STACK 0
+java.io.IOException: Bad file descriptor
+	at sun.nio.ch.FileDispatcherImpl.pwrite0(Native Method)
+	at sun.nio.ch.FileDispatcherImpl.pwrite(FileDispatcherImpl.java:66)
+	at sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:89)
+	at sun.nio.ch.IOUtil.write(IOUtil.java:65)
+	at sun.nio.ch.FileChannelImpl.writeInternal(FileChannelImpl.java:778)
+	at sun.nio.ch.FileChannelImpl.write(FileChannelImpl.java:764)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.write(Database.java:166)
+	at org.eclipse.cdt.internal.core.pdom.db.Chunk.flush(Chunk.java:52)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.flushAndUnlockChunks(Database.java:743)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.flush(Database.java:730)
+	at org.eclipse.cdt.internal.core.pdom.PDOM.flush(PDOM.java:1487)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.flush(WritablePDOM.java:191)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.flush(WritableCIndex.java:165)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:611)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-14 17:28:46.727
+!MESSAGE IOException
+!STACK 0
+java.io.IOException: Bad file descriptor
+	at sun.nio.ch.FileDispatcherImpl.pwrite0(Native Method)
+	at sun.nio.ch.FileDispatcherImpl.pwrite(FileDispatcherImpl.java:66)
+	at sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:89)
+	at sun.nio.ch.IOUtil.write(IOUtil.java:65)
+	at sun.nio.ch.FileChannelImpl.writeInternal(FileChannelImpl.java:778)
+	at sun.nio.ch.FileChannelImpl.write(FileChannelImpl.java:764)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.write(Database.java:166)
+	at org.eclipse.cdt.internal.core.pdom.db.Chunk.flush(Chunk.java:52)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.flushAndUnlockChunks(Database.java:743)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.giveUpExclusiveLock(Database.java:700)
+	at org.eclipse.cdt.internal.core.pdom.PDOM.releaseWriteLock(PDOM.java:1080)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.releaseWriteLock(WritableCIndex.java:141)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.releaseWriteLock(WritableCIndex.java:126)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.setResume(AbstractIndexerTask.java:630)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:548)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-14 17:28:46.729
+!MESSAGE IOException
+!STACK 0
+java.io.IOException: Bad file descriptor
+	at sun.nio.ch.FileDispatcherImpl.pwrite0(Native Method)
+	at sun.nio.ch.FileDispatcherImpl.pwrite(FileDispatcherImpl.java:66)
+	at sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:89)
+	at sun.nio.ch.IOUtil.write(IOUtil.java:65)
+	at sun.nio.ch.FileChannelImpl.writeInternal(FileChannelImpl.java:778)
+	at sun.nio.ch.FileChannelImpl.write(FileChannelImpl.java:764)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.write(Database.java:166)
+	at org.eclipse.cdt.internal.core.pdom.db.Chunk.flush(Chunk.java:52)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.flushAndUnlockChunks(Database.java:743)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.giveUpExclusiveLock(Database.java:700)
+	at org.eclipse.cdt.internal.core.pdom.PDOM.releaseWriteLock(PDOM.java:1080)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.releaseWriteLock(WritableCIndex.java:141)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.releaseWriteLock(WritableCIndex.java:126)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.setResume(AbstractIndexerTask.java:630)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:609)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-14 17:28:46.731
+!MESSAGE IOException
+!STACK 0
+java.io.IOException: Bad file descriptor
+	at sun.nio.ch.FileDispatcherImpl.pwrite0(Native Method)
+	at sun.nio.ch.FileDispatcherImpl.pwrite(FileDispatcherImpl.java:66)
+	at sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:89)
+	at sun.nio.ch.IOUtil.write(IOUtil.java:65)
+	at sun.nio.ch.FileChannelImpl.writeInternal(FileChannelImpl.java:778)
+	at sun.nio.ch.FileChannelImpl.write(FileChannelImpl.java:764)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.write(Database.java:166)
+	at org.eclipse.cdt.internal.core.pdom.db.Chunk.flush(Chunk.java:52)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.flushAndUnlockChunks(Database.java:743)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.flush(Database.java:730)
+	at org.eclipse.cdt.internal.core.pdom.PDOM.flush(PDOM.java:1487)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.flush(WritablePDOM.java:191)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.flush(WritableCIndex.java:165)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:611)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-14 17:28:47.379
+!MESSAGE IOException
+!STACK 0
+java.io.IOException: Bad file descriptor
+	at sun.nio.ch.FileDispatcherImpl.pwrite0(Native Method)
+	at sun.nio.ch.FileDispatcherImpl.pwrite(FileDispatcherImpl.java:66)
+	at sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:89)
+	at sun.nio.ch.IOUtil.write(IOUtil.java:65)
+	at sun.nio.ch.FileChannelImpl.writeInternal(FileChannelImpl.java:778)
+	at sun.nio.ch.FileChannelImpl.write(FileChannelImpl.java:764)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.write(Database.java:166)
+	at org.eclipse.cdt.internal.core.pdom.db.Chunk.flush(Chunk.java:52)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.flushAndUnlockChunks(Database.java:743)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.giveUpExclusiveLock(Database.java:700)
+	at org.eclipse.cdt.internal.core.pdom.PDOM.releaseWriteLock(PDOM.java:1080)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.releaseWriteLock(WritableCIndex.java:141)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.releaseWriteLock(WritableCIndex.java:126)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.setResume(AbstractIndexerTask.java:630)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:548)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-14 17:28:47.381
+!MESSAGE IOException
+!STACK 0
+java.io.IOException: Bad file descriptor
+	at sun.nio.ch.FileDispatcherImpl.pwrite0(Native Method)
+	at sun.nio.ch.FileDispatcherImpl.pwrite(FileDispatcherImpl.java:66)
+	at sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:89)
+	at sun.nio.ch.IOUtil.write(IOUtil.java:65)
+	at sun.nio.ch.FileChannelImpl.writeInternal(FileChannelImpl.java:778)
+	at sun.nio.ch.FileChannelImpl.write(FileChannelImpl.java:764)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.write(Database.java:166)
+	at org.eclipse.cdt.internal.core.pdom.db.Chunk.flush(Chunk.java:52)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.flushAndUnlockChunks(Database.java:743)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.giveUpExclusiveLock(Database.java:700)
+	at org.eclipse.cdt.internal.core.pdom.PDOM.releaseWriteLock(PDOM.java:1080)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.releaseWriteLock(WritableCIndex.java:141)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.releaseWriteLock(WritableCIndex.java:126)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.setResume(AbstractIndexerTask.java:630)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:609)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.cdt.core 4 0 2019-07-14 17:28:47.382
+!MESSAGE IOException
+!STACK 0
+java.io.IOException: Bad file descriptor
+	at sun.nio.ch.FileDispatcherImpl.pwrite0(Native Method)
+	at sun.nio.ch.FileDispatcherImpl.pwrite(FileDispatcherImpl.java:66)
+	at sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:89)
+	at sun.nio.ch.IOUtil.write(IOUtil.java:65)
+	at sun.nio.ch.FileChannelImpl.writeInternal(FileChannelImpl.java:778)
+	at sun.nio.ch.FileChannelImpl.write(FileChannelImpl.java:764)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.write(Database.java:166)
+	at org.eclipse.cdt.internal.core.pdom.db.Chunk.flush(Chunk.java:52)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.flushAndUnlockChunks(Database.java:743)
+	at org.eclipse.cdt.internal.core.pdom.db.Database.flush(Database.java:730)
+	at org.eclipse.cdt.internal.core.pdom.PDOM.flush(PDOM.java:1487)
+	at org.eclipse.cdt.internal.core.pdom.WritablePDOM.flush(WritablePDOM.java:191)
+	at org.eclipse.cdt.internal.core.index.WritableCIndex.flush(WritableCIndex.java:165)
+	at org.eclipse.cdt.internal.core.pdom.AbstractIndexerTask.runTask(AbstractIndexerTask.java:611)
+	at org.eclipse.cdt.internal.core.pdom.indexer.PDOMIndexerTask.run(PDOMIndexerTask.java:161)
+	at org.eclipse.cdt.internal.core.pdom.PDOMIndexerJob.run(PDOMIndexerJob.java:155)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
