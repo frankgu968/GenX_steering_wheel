@@ -26,7 +26,7 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */     
-
+#include "serial.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -36,7 +36,9 @@
 
 /* Private define ------------------------------------------------------------*/
 /* USER CODE BEGIN PD */
-
+#define navPadScanPeriod      50  // ms
+#define acceleratorScanPeriod 10  // ms
+#define RHTempScanPeriod      100 // ms
 /* USER CODE END PD */
 
 /* Private macro -------------------------------------------------------------*/
@@ -136,9 +138,11 @@ void scanNavPad(void const * argument)
 
   /* USER CODE BEGIN scanNavPad */
   /* Infinite loop */
+  uint32_t lastTickTime; 
+  lastTickTime = xTaskGetTickCount();
   for(;;)
   {
-    osDelay(1);
+    osDelayUntil(&lastTickTime, navPadScanPeriod);
   }
   /* USER CODE END scanNavPad */
 }
@@ -154,9 +158,11 @@ void getAccelerator(void const * argument)
 {
   /* USER CODE BEGIN getAccelerator */
   /* Infinite loop */
+  uint32_t lastTickTime; 
+  lastTickTime = xTaskGetTickCount();
   for(;;)
   {
-    osDelay(1);
+    osDelayUntil(&lastTickTime, acceleratorScanPeriod);
   }
   /* USER CODE END getAccelerator */
 }
@@ -172,9 +178,12 @@ void getRHTemp(void const * argument)
 {
   /* USER CODE BEGIN getRHTemp */
   /* Infinite loop */
+  uint32_t lastTickTime; 
+  lastTickTime = xTaskGetTickCount();
   for(;;)
   {
-    osDelay(1);
+
+    osDelayUntil(&lastTickTime, RHTempScanPeriod);
   }
   /* USER CODE END getRHTemp */
 }
