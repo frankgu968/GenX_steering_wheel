@@ -1,2 +1,4 @@
 **/.DStore
 **/Debug/
+.bak*
+*.log
