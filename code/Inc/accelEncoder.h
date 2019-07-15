@@ -6,7 +6,7 @@
 
 #include "FreeRTOS.h"
 
-const uint8_t ACEMap[] = {0x7F,0x3F,0x3A,};
+const uint8_t aceMap[] = {0x7F,0x3F,0x3A};
 
 uint8_t readAccelEncoder();
 
