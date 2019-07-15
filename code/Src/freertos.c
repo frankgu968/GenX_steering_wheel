@@ -28,6 +28,7 @@
 /* USER CODE BEGIN Includes */     
 #include "serial.h"
 #include "serializers.h"
+#include "accelEncoder.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -173,8 +174,8 @@ void getAccelerator(void const * argument)
   lastTickTime = xTaskGetTickCount();
   for(;;)
   {
-    // TODO: Placeholder
-    encPos = 0x17;
+    encPos = 0x17;  // FIXME: placeholder value
+    // encPos = readAccelEncoder();`// Read GPIO pin values
 
     serializeEncoder(&buf, encPos);  // Assemble message
     send_data(&buf, MSG_LEN_ENC);    // Send message to UART
