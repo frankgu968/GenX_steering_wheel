@@ -29,6 +29,7 @@
 #include "serial.h"
 #include "serializers.h"
 #include "accelEncoder.h"
+#include "rhTemp.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -38,9 +39,9 @@
 
 /* Private define ------------------------------------------------------------*/
 /* USER CODE BEGIN PD */
-#define navPadScanPeriod      50  // ms
-#define acceleratorScanPeriod 10  // ms
-#define RHTempScanPeriod      100 // ms
+#define navPadScanPeriod      1000  // ms
+#define acceleratorScanPeriod 1000  // ms
+#define RHTempScanPeriod      1000 // ms
 /* USER CODE END PD */
 
 /* Private macro -------------------------------------------------------------*/
@@ -90,7 +91,7 @@ void vApplicationGetIdleTaskMemory( StaticTask_t **ppxIdleTaskTCBBuffer, StackTy
   */
 void MX_FREERTOS_Init(void) {
   /* USER CODE BEGIN Init */
-       
+   initRHTempSensor(); //FIXME
   /* USER CODE END Init */
 
   /* USER CODE BEGIN RTOS_MUTEX */
@@ -147,11 +148,11 @@ void scanNavPad(void const * argument)
   for(;;)
   {
     // TODO: Placeholders
-    navBtn = 0xCD;
-    navEnc = 0x26;
+    navBtn = 0x31;
+    navEnc = 0x32;
 
     serializeNavPad(&buf, navBtn, navEnc);  // Assemble message
-    send_data(&buf, MSG_LEN_TEMP);    // Send message to UART
+    send_data(&buf, MSG_LEN_NAV);    // Send message to UART
     osDelayUntil(&lastTickTime, navPadScanPeriod);
   }
   /* USER CODE END scanNavPad */
@@ -174,8 +175,7 @@ void getAccelerator(void const * argument)
   lastTickTime = xTaskGetTickCount();
   for(;;)
   {
-    encPos = 0x17;  // FIXME: placeholder value
-    // encPos = readAccelEncoder();`// Read GPIO pin values
+    encPos = readAccelEncoder();// Read GPIO pin values
 
     serializeEncoder(&buf, encPos);  // Assemble message
     send_data(&buf, MSG_LEN_ENC);    // Send message to UART
@@ -202,8 +202,10 @@ void getRHTemp(void const * argument)
   for(;;)
   {
     // TODO: placeholders
-    rh = 0x10;
-    temp = 0x15;
+    rh = 0x34;
+    temp = 0x35;
+//    //rh = readRH();
+//    //temp = readTemp();
 
     serializeRHTemp(&buf, temp, rh);  // Assemble message
     send_data(&buf, MSG_LEN_TEMP);    // Send message to UART

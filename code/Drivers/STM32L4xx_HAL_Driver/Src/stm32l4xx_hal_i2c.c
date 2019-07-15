@@ -6113,10 +6113,10 @@ static HAL_StatusTypeDef I2C_WaitOnTXISFlagUntilTimeout(I2C_HandleTypeDef *hi2c,
   while (__HAL_I2C_GET_FLAG(hi2c, I2C_FLAG_TXIS) == RESET)
   {
     /* Check if a NACK is detected */
-    if (I2C_IsAcknowledgeFailed(hi2c, Timeout, Tickstart) != HAL_OK)
-    {
-      return HAL_ERROR;
-    }
+//    if (I2C_IsAcknowledgeFailed(hi2c, Timeout, Tickstart) != HAL_OK)
+//    {
+//      return HAL_ERROR;
+//    }
 
     /* Check for the Timeout */
     if (Timeout != HAL_MAX_DELAY)
